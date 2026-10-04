@@ -22,5 +22,10 @@ print('\n')
 val.insert(3, 69)
 val.append(100)
 val[2] = 200
-for i in range(0, len(val)):
-    print(val[i], end=" ")
+
+copyArray = array(val.typecode, (x*2 for x in val))
+copyArray.pop(2)
+copyArray.remove(138)
+
+for i in range(0, len(copyArray)):
+    print(copyArray[i], end=" ")
