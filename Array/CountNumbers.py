@@ -6,3 +6,10 @@ while num > 0:
     count += 1
 
 print(count)
+
+# Method 2
+
+from math import *
+
+def countDigits(num):
+    return int(log10(num)+1)
